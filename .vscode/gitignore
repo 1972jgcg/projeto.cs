@@ -1,0 +1,14 @@
+# Build e binários
+bin/
+obj/
+*.exe
+*.dll
+
+# Configurações locais
+.vscode/
+*.user
+*.suo
+
+# Arquivos temporários
+*.log
+*.tmp
