@@ -22,7 +22,7 @@ class Program
         emprego2._anoInicio = 2022;
         
         curriculo1._empregos.Add(emprego1);
-        curriculo1._empregos.Add(emprego2);
+        curriculo1._empregos.Add(emprego2);   
 
         curriculo1.Exibir();
     }
