@@ -1,15 +1,13 @@
 using System;
 using System.Collections.Generic;
+
 class Program
 {
     static void Main(string[] args)
     {
-
         Curriculo curriculo1 = new Curriculo();
         curriculo1._nome = "José Colina";
 
-        
-        // Criando objeto e atribuindo valores com notação de ponto
         Emprego emprego1 = new Emprego();
         emprego1._cargo = "Engenheiro de Software";
         emprego1._empresa = "Microsoft";
@@ -17,16 +15,20 @@ class Program
         emprego1._anoFim = 2023;
 
         Emprego emprego2 = new Emprego();
-        emprego2._cargo = "gerente";
-        emprego2._empresa = "Apple";
-        emprego2._anoInicio = 2022;
-        
+        emprego2._cargo = "Analista de Sistemas";
+        emprego2._empresa = "Google";
+        emprego2._anoInicio = 2023;
+        emprego2._anoFim = null;
+
+        // Adicionando empregos ao currículo
         curriculo1._empregos.Add(emprego1);
         curriculo1._empregos.Add(emprego2);
 
+        // Exibindo currículo completo em uma chamada
         curriculo1.Exibir();
     }
 }
+
 public class Curriculo
 {
     public string _nome;
@@ -45,17 +47,13 @@ public class Curriculo
         }
     }
 }
+
 public class Emprego
 {
-    // Variáveis membro privadas
     public string _cargo;
     public string _empresa;
     public int _anoInicio;
-    public int? _anoFim; // int? permite valor nulo
+    public int? _anoFim;
 
-    // Construtor
     public Emprego() {}
 }
-
-
-
